@@ -195,7 +195,7 @@ return [
         BC\Laravel\DropboxDriver\ServiceProvider::class,
         App\Providers\GoogleDriveServiceProvider::class,
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
-//        Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -254,7 +254,7 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Zip' => ZanySoft\Zip\ZipFacade::class,
-//        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
     'debug_blacklist' => [
