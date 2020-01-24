@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\App;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+
+    public function run() {
+        $this->call(RolesTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
+        $this->call(CurrencySeeder::class);
+        $this->call(OrganisationSettingsTableSeeder::class);
+        $this->call(EmailSettingSeeder::class);
+        $this->call(SmtpSettingsSeeder::class);
+        $this->call(ThemeSettingsTableSeeder::class);
+
+        if (!App::environment('codecanyon')) {
+            $this->call(ProjectCategorySeeder::class);
+            $this->call(ProjectSeeder::class);
+            $this->call(EstimateSeeder::class);
+            $this->call(ExpenseSeeder::class);
+            $this->call(TicketSeeder::class);
+            $this->call(RoleSeeder::class);
+            $this->call(LeaveSeeder::class);
+            $this->call(NoticesTableSeeder::class);
+            $this->call(EventTableSeeder::class);
+            $this->call(AttendanceTableSeeder::class);
+            $this->call(LeadSeeder::class);
+            $this->call(TaxTableSeeder::class);
+            $this->call(ProductTableSeeder::class);
+            $this->call(ContractTypeTableSeeder::class);
+            $this->call(ContractTableSeeder::class);
+            $this->call(LeadsTableSeeder::class);
+        }
+    }
+
+}
