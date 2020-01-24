@@ -185,7 +185,7 @@ return [
         \Trebol\Entrust\EntrustServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
 
-        Barryvdh\Debugbar\ServiceProvider::class,
+//        Barryvdh\Debugbar\ServiceProvider::class,
 
         Froiden\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
         Barryvdh\TranslationManager\ManagerServiceProvider::class,
@@ -195,7 +195,7 @@ return [
         BC\Laravel\DropboxDriver\ServiceProvider::class,
         App\Providers\GoogleDriveServiceProvider::class,
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
+//        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
